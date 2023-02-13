@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!--STARTPAGE-->
+<div class="row" id="jumbotron_row" >
+    <div class="col-xl-7" id="jumbotron_col_for_featurette" style="text-align: left; margin-bottom: 0px;">
+
+        <img class="featurette-image img-fluid mx-auto" id="main_image_1" src="https://d3j8buaepzkvqi.cloudfront.net/img/main_new_1.png" alt="" style="">
+        <img class="featurette-image img-fluid mx-auto" id="main_image_2" src="https://d3j8buaepzkvqi.cloudfront.net/img/main_new_1.png" alt="" style="display: none;">
+
+    </div>
+
+    <div class="col-xl-5" id="main_heading" style="margin: auto;">
+
+
+
+        <!--                        <div class="pc-only" style="text-align: right;">-->
+        <!--                          <h3 class="" style="position: absolute; right: 110px; top: -70px;">-->
+        <!--                                      <span class="counter-card" style="">7</span>-->
+        <!--                                      <span class="counter-card" style="">1</span>-->
+        <!--                                      ,&nbsp;<span class="counter-card" style="">5</span>-->
+        <!--                                      <span class="counter-card" style="">0</span>-->
+        <!--                                      <span class="counter-card" style="">7</span>-->
+        <!--                          </h3>-->
+        <!--                          <h3 style="position: absolute; right: 30px; top: -65px;">members-->
+        <!--                          </h3>-->
+        <!--                        </div>-->
+
+
+        <div class="mb-4 wc-pc-only" style="text-align: center;">
+            <!--             <img src='https://d3j8buaepzkvqi.cloudfront.net/img/WebCeph_72x72.png' id="navbar_brand_img" class="mx-auto" alt="..." style="width: 55px; height: 55px; margin-top: -4px;">-->
+            <img src="https://d3j8buaepzkvqi.cloudfront.net/img/LOGO_60.png" id="navbar_brand_img2" class="" alt="..." style="height: 33px; margin-left: 8px; margin-top: -4px;">
+        </div>
+        <h3 class="main-heading" style="text-align: center; padding-top: 0px;">반려동물 뚝딱뚝딱 <br>클라우드 플랫폼</h3>
+
+
+
+        <div class="row main-buttons" style="">
+            <div class="col-7" id="main_button_1" style="padding-left: 0px; padding-right: 5px;">
+                <a class="nav-link" href="{% url 'common:signup' %}">회원가입</a>
+            </div>
+            <div class="col-5" id="main_button_2" style="padding-left: 5px; padding-right: 0px;">
+                <a class="nav-link" href="{% url 'common:login' %}">로그인</a>
+            </div>
+        </div>
+
+        <hr class="main-buttons-divider" style="display: flex;">
+
+        <div class="row main-buttons forum_banner mb-4" style="display: none;">
+            <div class="col-12" style="padding: 0px;">
+                <a href="/ko/student/3/" class="btn btn-block border-gradient color-1 btn-lg" role="button">News &amp; Updates</a>
+            </div>
+        </div>
+
+        <p class="wc-pc-only app_banner1" style="justify-content: center; display: flex;">앱을 다운로드하세요.</p>
+
+        <div class="row main-buttons app_banner2" style="justify-content: center; display: flex;">
+
+            <a class="" href="https://play.google.com/store/apps/details?id=com.assemblecircle.webceph" style="margin-right: 8px; width: 5%;">
+                <img alt="Available on Google Play" class="Rt8TI " src="https://d3j8buaepzkvqi.cloudfront.net/img/playstore.png" style="height: 40px;">
+            </a>
+            <a class="" href="https://apps.apple.com/app/webceph/id1534844081" style="width: 5%;">
+                <img alt="Available on the App Store" class="Rt8TI " src="https://d3j8buaepzkvqi.cloudfront.net/img/appstore.png" style="height: 40px;">
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}
